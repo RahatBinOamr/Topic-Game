@@ -4,7 +4,7 @@ import quiz from '../img/quiz.jpeg'
 
 const Header = () => {
     return (
-        <div className="navbar bg-gray-400 text-pink-300 w-ful">
+        <div className="navbar bg-gray-400 text-white text-xl w-ful">
         <div className="navbar-start">
         <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -12,8 +12,8 @@ const Header = () => {
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-800 rounded-box w-full">
             <li> <Link to= '/home' > Home </Link> </li>
+            <li> <Link to= '/quiz' > Quiz </Link> </li>
             <li> <Link to='/Statistic'> Statistic </Link> </li>
-           
             <li> <Link to='/blog'> Blog </Link> </li>
       </ul>
     </div>
@@ -27,10 +27,10 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
            
-          <li> <Link to= '/home' > Home </Link> </li>
-            <li> <Link to='/Statistic'> Statistic </Link> </li>
-           
-            <li> <Link to='/blog'> Blog </Link> </li>
+            <li> <Link to= '/home' > Home </Link> </li>
+            <li> <Link to= '/quiz' > Quiz </Link> </li>
+              <li> <Link to='/Statistic'> Statistic </Link> </li>
+              <li> <Link to='/blog'> Blog </Link> </li>
             
           </ul>
         </div>
