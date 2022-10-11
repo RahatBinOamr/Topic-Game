@@ -4,13 +4,13 @@ import quiz from '../img/quiz.jpeg'
 
 const Header = () => {
     return (
-        <div className="navbar bg-gray-400 text-white text-xl w-ful">
+        <div className="navbar bg-gray-400 shadow-lg text-white text-xl w-full">
         <div className="navbar-start">
-        <div className="dropdown">
-      <label tabIndex={0} className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        <div className="dropdown w-full">
+      <label tabIndex={0} className="btn btn-ghost  lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
-      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-800 rounded-box w-full">
+      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-1 shadow  bg-gray-400  rounded-box w-full">
             <li> <Link to= '/home' > Home </Link> </li>
           
             <li> <Link to='/Statistic'> Statistic </Link> </li>
