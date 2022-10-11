@@ -7,7 +7,7 @@ const Statistic = () => {
     console.log(data)
     
     return (
-        <div>
+        <div className='m-20'>
         <ResponsiveContainer width="100%" height={200} >
           <AreaChart
             width={500}
