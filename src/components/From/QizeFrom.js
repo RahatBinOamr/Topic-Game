@@ -35,7 +35,7 @@ const eye=()=>{
                 <h1 className='text-3xl font-semibold'> {question.slice(3,-4)} 
                 </h1>
                  {
-                 options.map(option=>  <p  className='text-left p-5 ml-5'> <input onClick={()=>handelCorrect(option)} type="checkbox"
+                 options.map(option=>  <p  className='text-left p-5 ml-5'> <input onClick={()=>handelCorrect(option)} type="radio"
                  name="check"  value='check' className='mr-8' /> {option}</p> )
                  } 
             </div>
