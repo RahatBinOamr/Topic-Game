@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import Home from "./Home";
 import ErrorPage from "./ErrorPage"
 import QuizesData from "./QuizeData";
+import Blog from "./Blog";
 export const router = createBrowserRouter([
 {
     path:'/',
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
                 return fetch(` https://openapi.programming-hero.com/api/quiz/${params.id}`)
             },
             element:<QuizesData></QuizesData>
+        },
+        {
+            path:'/blog',
+            element:<Blog></Blog>
         }
     ]
 }
