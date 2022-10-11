@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { QuizContext } from '../Layout/Main';
-import Quizes from './Quizs';
+import Quizes from './Quizes';
 import img1 from './img1.jpg'
 
 const Home = () => {

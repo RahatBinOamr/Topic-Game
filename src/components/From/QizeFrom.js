@@ -1,18 +1,20 @@
 import React from 'react';
 import { toast } from 'react-toastify';
+import { } from '../../Layout/Main';
 
 
 
 
-const QizeFrom = ({quiz}) => {
+const QizeFrom = ({quiz,name}) => {
     const {correctAnswer,id,options,question}=quiz;
-console.log(quiz)
+    
+// console.log(quiz)
 
 const handelCorrect= (id)=>{
 // console.log(id);
 
 if(id===correctAnswer){
-    console.log('hello');
+    // console.log('hello');
     return toast.success('right answer!', { autoClose: 500 })
 }else{
     toast.warning('wrong answer!', { autoClose: 500 })
@@ -20,12 +22,13 @@ if(id===correctAnswer){
 }
 const eye=()=>{
     // console.log('eye');
-   console.log(correctAnswer);
+//    console.log(correctAnswer);
    toast.success(correctAnswer, { autoClose: 500 })
 }
 
     return (
         <div >
+               
             <div className='bg-cyan-100 text-base-300 m-10 rounded-lg' >  
             <svg onClick={eye} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />

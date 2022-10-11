@@ -7,7 +7,7 @@ export const QuizContext = createContext([])
 const Main = () => {
     const quizesData = useLoaderData()
     const quizes=quizesData.data
-    console.log(quizes)
+    // console.log(quizes)
     return (
         <QuizContext.Provider value={quizes}>
             <Header></Header>
