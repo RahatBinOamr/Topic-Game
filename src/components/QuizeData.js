@@ -1,13 +1,25 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import QizeFrom from './From/QizeFrom';
 
 const QuizesData = () => {
     const quuizesProperty  = useLoaderData() 
     const quizesData = quuizesProperty.data; 
-    console.log(quizesData)
+    // console.log(quizesData)
+   const data = quizesData.questions
+//    console.log(data);
+
     return (
         <div>
-            This is QUiz data {quizesData.name}
+            {
+                data.map(quiz=> <QizeFrom
+                    key={quiz.id}
+                    quiz={quiz}
+                ></QizeFrom>
+               
+                
+              )
+            }
         </div>
     );
 };
