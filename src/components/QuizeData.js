@@ -13,6 +13,7 @@ const QuizesData = () => {
 
     return (
         <div>  <h1 className='text-3xl font-bold text-cyan-300 mt-5'> {name} </h1> 
+            <div>
             {
                 data.map(quiz=> <QizeFrom
                     key={quiz.id}
@@ -23,6 +24,7 @@ const QuizesData = () => {
                 
               )
             }
+            </div>
         </div>
     );
 };
