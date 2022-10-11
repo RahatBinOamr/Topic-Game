@@ -1,4 +1,27 @@
+<!-- start -->
+
+# MY Project statement
+1. I will create createBrowserRouter use in app js file 
+2. connected RouterProvider file and set Routes
+3. Then i will create header component and create main components with layout file.
+4. Then main component connected routes file.
+5. I will setup header and outlet in  Main file component .
+6. Then main component create children and added fetch loader with loader hook
+7. Then create context hook with main component and collect data using useLoaderData hook 
+
+8. Then pass the data context api using context.Provider function value
+9. Then receive home component using the hook useContext(context)
+10. Then pass value another component
+11. then i will create quiz component pass the data using loader hook
+12.then receive the data quizData component and pass the value quizFrom component and create quiz from 
+13. quiz from using conditional statement and tostify-router and using map function
+14. Then i will create statists component and using the context hook value and create rechart
+15. Then create blog component and answer some question
+  
+<!-- end -->
+
 # Getting Started with Create React App
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
