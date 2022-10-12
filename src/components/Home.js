@@ -7,7 +7,7 @@ const Home = () => {
     const quizes = useContext(QuizContext)
     return (
         <div className='p-10'>
-           <div className='grid sm:grid md:grid-cols-2 p-10 '>
+           <div className='grid sm:grid md:grid-cols-2 p-10 gap-10'>
             
                 <div>
                 <h1 className='text-3xl text-center font-semibold  text-cyan-300'>
